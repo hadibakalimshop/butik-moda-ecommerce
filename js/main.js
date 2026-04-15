@@ -88,7 +88,8 @@ function renderHeader(activePage = '') {
     { label: 'Kadın', href: 'products.html?category=kadin', key: 'kadin' },
     { label: 'Erkek', href: 'products.html?category=erkek', key: 'erkek' },
     { label: 'Çocuk', href: 'products.html?category=cocuk', key: 'cocuk' },
-    { label: 'Tüm Ürünler', href: 'products.html', key: 'products' }
+    { label: 'Tüm Ürünler', href: 'products.html', key: 'products' },
+    { label: 'İletişim', href: 'contact.html', key: 'contact' }
   ];
   return `
     <header class="site-header">

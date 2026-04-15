@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim — Butik Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 2.5rem;
+      align-items: start;
+      margin-top: 1rem;
+    }
+    .contact-info {
+      background: var(--c-surface);
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-tagline {
+      font-family: var(--font-script);
+      color: var(--c-primary);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-info h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    .contact-info > p {
+      color: var(--c-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .contact-items { display: flex; flex-direction: column; gap: 1.25rem; }
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .contact-item-icon {
+      width: 44px; height: 44px;
+      background: var(--c-surface-alt);
+      color: var(--c-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item-icon svg { width: 20px; height: 20px; }
+    .contact-item h4 {
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+      color: var(--c-text);
+    }
+    .contact-item p, .contact-item a {
+      color: var(--c-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .contact-item a:hover { color: var(--c-primary); }
+    .contact-social {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--c-border);
+    }
+    .contact-social h4 { margin-bottom: 0.75rem; }
+    .contact-social .social-links a { background: var(--c-surface-alt); }
+    .contact-social .social-links svg { color: var(--c-text); }
+    .contact-social .social-links a:hover { background: var(--c-primary); }
+    .contact-social .social-links a:hover svg { color: white; }
+
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <main>
+    <div class="container cart-page">
+      <nav class="breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        <span class="sep">/</span>
+        <span>İletişim</span>
+      </nav>
+
+      <h1 class="page-title">İletişim</h1>
+      <p class="page-subtitle">Size yardımcı olmaktan mutluluk duyarız</p>
+
+      <div class="contact-layout">
+        <!-- Sol: bilgiler -->
+        <aside class="contact-info">
+          <span class="contact-tagline">bize ulaşın</span>
+          <h2>Sorularınız için buradayız</h2>
+          <p>Ürünlerimiz, siparişleriniz ya da butik dünyamız hakkında aklınıza takılan her şeyi bize sorabilirsiniz. En kısa sürede dönüş yapıyoruz.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Adres</h4>
+                <p>Moda Caddesi No: 42<br>Kadıköy / İstanbul</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Telefon</h4>
+                <p><a href="tel:+902161234567">+90 216 123 45 67</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>E-posta</h4>
+                <p><a href="mailto:merhaba@butikmoda.com">merhaba@butikmoda.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4>Çalışma Saatleri</h4>
+                <p>Hafta içi: 09:00 – 19:00<br>Cumartesi: 10:00 – 17:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <h4>Bizi takip edin</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+              <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="10" y1="14" x2="8" y2="22"/></svg></a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Sağ: form -->
+        <form class="checkout-form" id="contact-form" novalidate>
+          <div class="form-section">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Mesaj Gönderin
+            </h3>
+            <div class="form-grid">
+              <div class="form-field">
+                <label>Ad Soyad <span class="req">*</span></label>
+                <input type="text" id="c-name" name="name" autocomplete="name">
+                <span class="error-msg" id="err-c-name"></span>
+              </div>
+              <div class="form-field">
+                <label>E-posta <span class="req">*</span></label>
+                <input type="email" id="c-email" name="email" autocomplete="email">
+                <span class="error-msg" id="err-c-email"></span>
+              </div>
+              <div class="form-field full">
+                <label>Konu <span class="req">*</span></label>
+                <input type="text" id="c-subject" name="subject">
+                <span class="error-msg" id="err-c-subject"></span>
+              </div>
+              <div class="form-field full">
+                <label>Mesajınız <span class="req">*</span></label>
+                <textarea id="c-message" name="message" rows="6"></textarea>
+                <span class="error-msg" id="err-c-message"></span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 1rem;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Mesajı Gönder
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      mountLayout('contact');
+      document.getElementById('contact-form').addEventListener('submit', e => {
+        e.preventDefault();
+        document.querySelectorAll('.error-msg').forEach(el => el.textContent = '');
+        document.querySelectorAll('input, textarea').forEach(el => el.classList.remove('error'));
+
+        const data = Object.fromEntries(new FormData(e.target));
+        const errors = {};
+        if (!data.name || data.name.trim().length < 3) errors['c-name'] = 'Ad soyad en az 3 karakter';
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email || '')) errors['c-email'] = 'Geçerli e-posta girin';
+        if (!data.subject || data.subject.trim().length < 3) errors['c-subject'] = 'Konu yazın';
+        if (!data.message || data.message.trim().length < 10) errors['c-message'] = 'En az 10 karakter';
+
+        if (Object.keys(errors).length) {
+          Object.entries(errors).forEach(([field, msg]) => {
+            const input = document.getElementById(field);
+            const err = document.getElementById(`err-${field}`);
+            if (input) input.classList.add('error');
+            if (err) err.textContent = msg;
+          });
+          toast('Lütfen formdaki hataları düzeltin', 'error');
+          return;
+        }
+
+        toast('Mesajınız alındı, teşekkürler ♡');
+        e.target.reset();
+      });
+    });
+  </script>
+</body>
+</html>
