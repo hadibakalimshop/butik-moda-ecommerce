@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün — Butik Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <main>
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        <span class="sep">/</span>
+        <a href="products.html">Ürünler</a>
+        <span class="sep">/</span>
+        <span id="breadcrumb-category"></span>
+      </nav>
+
+      <section class="product-detail">
+        <div id="product-root"></div>
+      </section>
+
+      <section class="section" id="similar-section">
+        <h2 class="section-title">Benzer Ürünler</h2>
+        <p class="section-subtitle">belki bunları da seversiniz</p>
+        <div class="product-grid" id="similar-grid"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/product.js"></script>
+</body>
+</html>

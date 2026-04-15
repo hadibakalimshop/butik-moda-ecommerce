@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siparişiniz Alındı — Butik Moda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <div id="header-slot"></div>
+
+  <main>
+    <div class="container success-page">
+      <div class="success-card">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h1>Siparişiniz Alındı!</h1>
+        <p class="tagline">teşekkür ederiz ♡</p>
+        <p>Siparişiniz başarıyla oluşturuldu. En kısa sürede hazırlanıp size ulaştırılacak.</p>
+        <div class="order-code" id="order-code">BTK-00000000</div>
+        <p>Sipariş detayları ve kargo bilgileri kısa süre içinde e-posta adresinize gönderilecektir.</p>
+        <div class="success-actions">
+          <a href="index.html" class="btn btn-primary">Ana Sayfa</a>
+          <a href="products.html" class="btn btn-outline">Alışverişe Devam Et</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-slot"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      mountLayout('');
+      const code = getQueryParam('order') || 'BTK-00000000';
+      document.getElementById('order-code').textContent = code;
+    });
+  </script>
+</body>
+</html>
